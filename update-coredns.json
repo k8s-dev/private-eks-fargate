@@ -1,0 +1,19 @@
+{
+    "fargateProfileName": "coredns",
+    "clusterName": "private-fargate-cluster",
+    "podExecutionRoleArn": "arn:aws:iam::1234567890:role/private-fargate-pod-execution-role",
+    "subnets": [
+        "subnet-01b3ae56696b33747",
+        "subnet-0e639397d1f12500a",
+        "subnet-039f4170f8a820afc"
+    ],
+    "selectors": [
+        {
+            "namespace": "kube-system",
+            "labels": {
+                "k8s-app": "kube-dns"
+            }
+        }
+    ]
+}
+
